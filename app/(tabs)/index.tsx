@@ -18,11 +18,11 @@ export default function App() {
             <Link href= "/(auth)/sign-in" className="mt-4 rounded bg-primary text-black p-4">GO TO Sign In</Link>
             <Link href= "/(auth)/sign-up" className="mt-4 rounded bg-primary text-black p-4">GO TO Sign Up</Link>
 
-            <Link href="/app/subscriptions/spotify">Spotify Subscription</Link>
+            <Link href="/subscriptions/spotify">Spotify Subscription</Link>
             <Link 
                 href={{
-                    pathname: "/subscription/[id]",
-                    params: {id: "claude"},
+                    pathname: "/subscriptions/[id]",
+                    params: { id: "claude" },
                 }}
                 >
                 Claude Max Subscription

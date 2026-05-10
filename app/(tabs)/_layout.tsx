@@ -42,17 +42,18 @@ const TabLayout = () => {
             },
 
             tabBarItemStyle: {
-                paddingHorizontal: tabBar.height / 2 - tabBar.iconFrame / 1.6
+                paddingVertical: tabBar.height / 2 - tabBar.iconFrame / 1.6
             },
 
             tabBarIconStyle: {
                 width: tabBar.iconFrame ,
                 height: tabBar.iconFrame ,
-                alignItems: "center",
+                alignItems: 'center',
 
             }
             
-        }}>
+        }}
+        >
             {tabs.map((tab) => (
                 <Tabs.Screen
                     key={tab.name}
@@ -60,7 +61,7 @@ const TabLayout = () => {
                     options={{
                         title: tab.title,
                         tabBarIcon: ({focused}) => (
-                            <TabIcon focused={focused} icon={tab.icon}/>
+                            <TabIcon focused={focused} icon={tab.icon} />
                         )
                     }}/>
             ))}
